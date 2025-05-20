@@ -1,0 +1,15 @@
+const persona = {
+    nombre: "Ivan Isay",
+    edad: 37,
+    direccion: {
+        ciudad: "Querétaro",
+        pais: "México",
+    }
+};
+
+//aplica destructuración
+const { nombre, edad, direccion: { ciudad, pais } } = persona;
+
+//imprime el mensaje
+
+console.log("Hola, mi nombre es " + nombre + ", tengo " + edad + " años y vivo en " + ciudad + ", " + pais + ".");
